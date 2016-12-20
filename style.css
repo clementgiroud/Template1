@@ -152,22 +152,66 @@ section {
 
 #free1 {
     overflow: hidden;
+    position: relative;
+}
+
+#free1 ruby {
+    max-height: 120%;
+    min-width: 100%;
+    opacity: 1;
 }
 
 .ruby {
-    width: 110%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 0;
+    line-height: 13.em;
     /*opacity: 0;*/
     
     /*height: 50px;*/
 }
 
 #free1:hover .texteruby {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
     opacity: 1;
-    cursor: pointer;
+    line-height: 13em;
+    top:0;
+    left: 0;
+    text-align: center; 
+    margin: 0;
+}
+
+.texteruby {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
+    opacity: 0;
+    line-height: 13em;
+    top:0;
+    left: 0;
+    text-align: center; 
+    margin: 0;
 }
 
 #free1 img {
+    max-height: 120%;
+    min-width: 100%;
     opacity: 1;
+}
+
+#free1 .texteruby {
+    opacity: 0;
+    cursor: pointer;
 }
 
 .twitter{
